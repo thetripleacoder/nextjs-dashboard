@@ -1,3 +1,4 @@
+// Import global styles css file
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 
@@ -8,6 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      {/* Adding a primary font */}
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );

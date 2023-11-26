@@ -3,6 +3,7 @@ import clsx from 'clsx';
 
 export default function InvoiceStatus({ status }: { status: string }) {
   return (
+    // clsx library - toggle classes, There may be cases where you may need to conditionally style an element based on state or some other condition.
     <span
       className={clsx(
         'inline-flex items-center rounded-full px-2 py-1 text-xs',

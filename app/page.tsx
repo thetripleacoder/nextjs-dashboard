@@ -1,7 +1,9 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+// Import CSS module, styles: Provide a way to make CSS classes locally scoped to components by default, enabling better modularity and reducing the risk of styling conflicts.
 import styles from '@/app/ui/home.module.css';
+//
 import { lusitana } from './ui/fonts';
 import Image from 'next/image';
 
@@ -32,6 +34,12 @@ export default function Page() {
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
+          {/* The <Image> Component is an extension of the HTML <img> tag, and comes with automatic image optimization, such as:
+
+Preventing layout shift automatically when images are loading.
+Resizing images to avoid shipping large images to devices with a smaller viewport.
+Lazy loading images by default (images load as they enter the viewport).
+Serving images in modern formats, like WebP and AVIF, when the browser supports it. */}
           <Image
             src="/hero-desktop.png"
             width={1000}
